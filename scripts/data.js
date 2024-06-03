@@ -205,7 +205,7 @@ const projects = {
             },
             {
               id: 3,
-              image: "assets/Javascript.png",
+              image: "assets/JavaScript.png",
               bullet: "Javascript",
             },
             {
