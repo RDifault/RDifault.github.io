@@ -513,7 +513,7 @@ img.vertical {
   .modal-mobile-header > svg:nth-child(3) {
     fill: #a8a8a8;
     right: 10px;
-    top: 30px;
+    top: 37px;
     transform: translate(-30%, -70%);
     position: absolute;
     z-index: 20;
