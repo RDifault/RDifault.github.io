@@ -39,6 +39,8 @@ header {
   color: transparent;
   margin-left: 1rem;
   cursor: pointer;
+  position: absolute;
+  left: 1px;
 }
 
 .logo-rama {
@@ -50,18 +52,18 @@ header {
   }
 }
 
-.header-container > .logo-rama:nth-child(1) {
+.header-container > a:nth-child(1) div {
   color: #00f5ff;
   left: 0px;
   transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-.header-container > .logo-rama:nth-child(2) {
+.header-container > a:nth-child(2) div {
   color: #ea047e;
   left: 3px;
   transition: 1.2s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
-.header-container > .logo-rama:nth-child(3) {
+.header-container > a:nth-child(3) div {
   left: 7px;
   transition: 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);
 }

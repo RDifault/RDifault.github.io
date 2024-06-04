@@ -14,10 +14,18 @@
   <body>
     <header>
       <div class="header-container">
-        <div id="toggle" class="logo-rama fill">R</div>
-        <div id="toggle" class="logo-rama fill">R</div>
-        <div id="toggle" class="logo-rama fill">R</div>
-        <div class="logo-rama">R</div>
+        <a href="#landing-page">
+          <div id="toggle" class="logo-rama fill">R</div>
+        </a>
+        <a href="#landing-page">
+          <div id="toggle" class="logo-rama fill">R</div>
+        </a>
+        <a href="#landing-page"
+          ><div id="toggle" class="logo-rama fill">R</div></a
+        >
+        <a href="#landing-page">
+          <div class="logo-rama">R</div>
+        </a>
         <div class="nav-container">
           <a class="nav" href="#exp">Experiences</a>
           <a class="nav" href="#projects">Projects</a>
@@ -356,7 +364,9 @@
               Engineer</span
             >
           </div>
-          <div class="text-md">Age: <span class="detail">23 year old</span></div>
+          <div class="text-md">
+            Age: <span class="detail">23 year old</span>
+          </div>
           <div class="text-md">
             Love to:
             <span class="detail"
@@ -880,7 +890,9 @@
 
           const btn = document.getElementById(`card-${obj.id}`);
 
-          const closeModal = document.getElementById(isMobile ? `close-mobile-${obj.id}` : `close-${obj.id}`);
+          const closeModal = document.getElementById(
+            isMobile ? `close-mobile-${obj.id}` : `close-${obj.id}`
+          );
 
           btn.onclick = function () {
             modal.classList.remove("close");
