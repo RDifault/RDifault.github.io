@@ -356,9 +356,9 @@
               Engineer</span
             >
           </div>
-          <div class="text-md">Age: <span class="detail">23 y.o.</span></div>
+          <div class="text-md">Age: <span class="detail">23 year old</span></div>
           <div class="text-md">
-            Loves to:
+            Love to:
             <span class="detail"
               >Code, Design, Game, Plays Music, Sharing ideas</span
             >
@@ -416,7 +416,7 @@
       <div class="copy-container d-flex">
         <div class="copyright d-flex">
           <div class="text-s">Made with pure HTML, CSS, and Javascript</div>
-          <div class="text-s">© Ramadhian Eka Putra</div>
+          <div class="text-s">by Ramadhian Eka Putra</div>
         </div>
       </div>
     </footer>
@@ -481,7 +481,7 @@
               <img class="card-img" src=${obj.img} alt="" />
             </div>
             <div class="text-md black marg card-title">${obj.title}</div>
-            <p class="text-s black marg grey desc">
+            <p class="text-s black marg grey desc text-justify">
               ${obj.desc}
             </p>
             <div class="read-more text-md">Read More</div>
@@ -743,6 +743,7 @@
               width="320"
               height="30"
               xmlns="http://www.w3.org/2000/svg"
+              style="display: none"
             >
               <rect
                 id="rect-modal"
@@ -764,14 +765,13 @@
               />
             </svg>
             <svg
-              id="close"
+              id="close-mobile-${obj.id}"
               xmlns="http://www.w3.org/2000/svg"
               width="20"
               height="20"
               fill="currentColor"
               class="bi bi-x-circle-fill"
               viewBox="0 0 16 16"
-              style="display: none"
             >
               <path
                 d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293z"
@@ -880,12 +880,14 @@
 
           const btn = document.getElementById(`card-${obj.id}`);
 
-          const closeModal = document.getElementById(`close-${obj.id}`);
+          const closeModal = document.getElementById(isMobile ? `close-mobile-${obj.id}` : `close-${obj.id}`);
+
           btn.onclick = function () {
             modal.classList.remove("close");
             innerModal.classList.remove("close");
+            document.body.style.overflowY = "hidden";
             modal.style.display = "flex";
-            showBottomSheet();
+            // showBottomSheet();
           };
 
           closeModal.onclick = function () {
@@ -909,98 +911,101 @@
                 innerModal.classList.remove("close");
                 modal.style.display = "none";
               }, 400);
-              hideBottomSheet();
+              // hideBottomSheet();
             }
           };
 
           //Modal Mobile Slider
-          const mobSlide = document.querySelector(`#mobile-slider-${obj.id}`);
-          const modalMobile = document.querySelector(
-            `#innerModal-mob-${obj.id}`
-          );
-          const mobileContent = document.querySelector(
-            `#mobile-content-${obj.id}`
-          );
+          // const mobSlide = document.querySelector(`#mobile-slider-${obj.id}`);
+          // const modalMobile = document.querySelector(
+          //   `#innerModal-mob-${obj.id}`
+          // );
+          // const mobileContent = document.querySelector(
+          //   `#mobile-content-${obj.id}`
+          // );
 
-          let isDragging = false,
-            startY,
-            startHeight;
+          // let isDragging = false,
+          //   startY,
+          //   startHeight;
 
-          const updateSheetHeight = (top) => {
-            modalMobile.style.top = `${top}vh`;
-            // console.log(`ModalMobile = ${top}vh`)
-            modalMobile.classList.toggle("fullscreen", top === 35);
-          };
+          // const updateSheetHeight = (top) => {
+          //   modalMobile.style.top = `${top}vh`;
+          //   // console.log(`ModalMobile = ${top}vh`)
+          //   modalMobile.classList.toggle("fullscreen", top === 35);
+          // };
 
-          const updateContentHeight = (height) => {
-            mobileContent.style.height = `${height}vh`;
-            console.log(`Mobile Content = ${height}vh`);
-            mobileContent.classList.toggle("fullscreen", height === 35);
-          };
+          // const updateContentHeight = (height) => {
+          //   mobileContent.style.height = `${height}vh`;
+          //   console.log(`Mobile Content = ${height}vh`);
+          //   mobileContent.classList.toggle("fullscreen", height === 35);
+          // };
 
-          const showBottomSheet = () => {
-            modalMobile.classList.add("show");
-            document.body.style.overflowY = "hidden";
-            modalMobile.style.display = "block";
-            updateSheetHeight(50);
-            updateContentHeight(50);
-          };
+          // const showBottomSheet = () => {
+          //   modalMobile.classList.add("show");
+          //   document.body.style.overflowY = "hidden";
+          //   modalMobile.style.display = "block";
+          //   updateSheetHeight(50);
+          //   updateContentHeight(50);
+          // };
 
-          const hideBottomSheet = () => {
-            modalMobile.classList.add("close");
-            modal.classList.add("close");
-            modalMobile.classList.remove("show");
-            document.body.style.overflowY = "auto";
-            setTimeout(() => {
-              modalMobile.classList.remove("close");
-              modal.classList.remove("close");
-              modalMobile.style.display = "none";
-              modal.style.display = "none";
-              updateSheetHeight(50);
-              updateContentHeight(50);
-            }, 200);
-          };
+          // const hideBottomSheet = () => {
+          //   modalMobile.classList.add("close");
+          //   modal.classList.add("close");
+          //   modalMobile.classList.remove("show");
+          //   document.body.style.overflowY = "auto";
+          //   setTimeout(() => {
+          //     modalMobile.classList.remove("close");
+          //     modal.classList.remove("close");
+          //     modalMobile.style.display = "none";
+          //     modal.style.display = "none";
+          //     updateSheetHeight(50);
+          //     updateContentHeight(50);
+          //   }, 200);
+          // };
 
-          const dragStart = (e) => {
-            isDragging = true;
-            startY = e.pageY || e.touches?.[0].pageY;
-            startHeight = parseInt(modalMobile.style.top);
-            startHeightContent = parseInt(mobileContent.style.top);
-            modalMobile.classList.add("dragging");
-          };
+          // const dragStart = (e) => {
+          //   e.preventDefault();
+          //   isDragging = true;
+          //   startY = e.pageY || e.touches?.[0].pageY;
+          //   startHeight = parseInt(modalMobile.style.top);
+          //   startHeightContent = parseInt(mobileContent.style.top);
+          //   modalMobile.classList.add("dragging");
+          // };
 
-          const dragging = (e) => {
-            if (!isDragging) return;
-            const delta = startY - (e.pageY || e.touches?.[0].pageY);
-            const newHeight = startHeight - (delta / window.innerHeight) * 100;
-            const newHeightContent =
-              startHeightContent + (delta / window.innerHeight) * 100;
-            updateSheetHeight(newHeight);
-            updateContentHeight(newHeightContent);
-          };
+          // const dragging = (e) => {
+          //   if (!isDragging) return;
+          //   e.preventDefault();
+          //   const delta = startY - (e.pageY || e.touches?.[0].pageY);
+          //   const newHeight = startHeight - (delta / window.innerHeight) * 100;
+          //   const newHeightContent =
+          //     startHeightContent + (delta / window.innerHeight) * 100;
+          //   updateSheetHeight(newHeight);
+          //   updateContentHeight(newHeightContent);
+          // };
 
-          const dragStop = () => {
-            isDragging = false;
-            modalMobile.classList.remove("dragging");
-            const sheetHeight = parseInt(modalMobile.style.top);
-            sheetHeight > 80
-              ? hideBottomSheet()
-              : sheetHeight < 35
-              ? updateSheetHeight(10)
-              : updateSheetHeight(50);
+          // const dragStop = (e) => {
+          //   e.preventDefault();
+          //   isDragging = false;
+          //   modalMobile.classList.remove("dragging");
+          //   const sheetHeight = parseInt(modalMobile.style.top);
+          //   sheetHeight > 80
+          //     ? hideBottomSheet()
+          //     : sheetHeight < 35
+          //     ? updateSheetHeight(10)
+          //     : updateSheetHeight(50);
 
-            const sheetHeightContent = parseInt(mobileContent.style.height);
-            sheetHeight < 35
-              ? updateContentHeight(100)
-              : updateContentHeight(50);
-          };
+          //   const sheetHeightContent = parseInt(mobileContent.style.height);
+          //   sheetHeight < 35
+          //     ? updateContentHeight(100)
+          //     : updateContentHeight(50);
+          // };
 
-          mobSlide.addEventListener("mousedown", dragStart);
-          document.addEventListener("mousemove", dragging);
-          document.addEventListener("mouseup", dragStop);
-          mobSlide.addEventListener("touchstart", dragStart);
-          document.addEventListener("touchmove", dragging);
-          document.addEventListener("touchend", dragStop);
+          // mobSlide.addEventListener("mousedown", dragStart);
+          // document.addEventListener("mousemove", dragging);
+          // document.addEventListener("mouseup", dragStop);
+          // mobSlide.addEventListener("touchstart", dragStart);
+          // document.addEventListener("touchmove", dragging);
+          // document.addEventListener("touchend", dragStop);
 
           // Modal Image Slideshow
           const slides = document.querySelectorAll(

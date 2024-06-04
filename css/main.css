@@ -522,6 +522,15 @@ footer svg {
   justify-content: center;
 }
 
+.text-align-justify {
+  text-align: justify;
+}
+
+.text-justify {
+  text-align: justify;
+  text-justify: distribute;
+}
+
 @media screen and  (max-width: 700px) {
   .intro {
     font-size: 48px;

@@ -194,13 +194,6 @@
   margin-left: 2rem;
 }
 
-/* .about-project > .text-s {
-  padding-top: 16px;
-  width: 700px;
-  border-top: 1px solid #a8a8a8;
-  font-size: 24px;
-} */
-
 .modal-section-title {
   padding-top: 16px;
   width: 700px;
@@ -442,18 +435,46 @@ img.vertical {
     display: none !important;
   }
 
+  @keyframes modalUpMobile {
+    from {
+      top: 100vh;
+      opacity: 0;
+    }
+    to {
+      top: 10vh;
+      opacity: 1;
+    }
+  }
+  
+  @keyframes modalDownMobile {
+    from {
+      top: 10vh;
+      opacity: 1;
+    }
+    to {
+      top: 100vh;
+      opacity: 0;
+    }
+  }
+  
+
   .modal-mobile {
     position: fixed;
     display: block;
     background-color: #ffffff;
     border-radius: 24px 24px 0 0;
     top: 10vh;
+    animation: 0.5s cubic-bezier(0.82, -0.06, 0.42, 0.97) 0s 1 modalUpMobile;
+  }
+
+  .modal-mobile.close {
+    animation: 0.5s cubic-bezier(0.82, -0.06, 0.42, 0.97) 0s 1 modalDownMobile;
   }
 
   .mobile-content {
     overflow-y: auto;
     position: relative;
-    height: 50vh;
+    height: 100vh;
     max-height: 100vh;
   }
 
@@ -495,9 +516,10 @@ img.vertical {
     top: 30px;
     transform: translate(-30%, -70%);
     position: absolute;
+    z-index: 20;
   }
 
-  .modal-mobile.show {
+  /* .modal-mobile.show {
     opacity: 1;
     pointer-events: auto;
   }
@@ -512,7 +534,7 @@ img.vertical {
 
   .modal-mobile .body::-webkit-scrollbar {
     width: 0;
-  }
+  } */
 
   .modal-mobile.show .content {
     transform: translateY(0%);
