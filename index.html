@@ -316,10 +316,15 @@
         <div class="title left front">Projects.</div>
         <div class="title left stroke back">Projects.</div>
       </div>
-      <!-- <div class="title subtitle left front">University Projects</div> -->
+      <div class="title subtitle left front">University Projects</div>
       <div class="card-stack d-flex">
         <!-- Card -->
-        <div id="card" class="d-flex"></div>
+        <div id="card-university" class="d-flex"></div>
+      </div>
+      <div class="title subtitle left front">Frontend-focused Projects</div>
+      <div class="card-stack d-flex">
+        <!-- Card -->
+        <div id="card-frontend" class="d-flex"></div>
       </div>
 
       <!-- Modal -->
@@ -491,12 +496,13 @@
 
       //Card Content
       document.addEventListener("DOMContentLoaded", () => {
-        const card = document.getElementById("card");
-        let htmlCard = "";
-        const titleUniversity = "<div class='title subtitle left front'>University Projects</div>"
-        const titleFrontend = "<div class='title subtitle left front'>Frontend-focused Projects</div>"
+        const cardUniversity = document.getElementById("card-university");
+        const cardFrontend = document.getElementById("card-frontend");
+        let htmlCardUniversity = "";
+        let hmtlCardFrontend = "";
         projects.proj.forEach((obj) => {
-          htmlCard += `<div id="card-${obj.id}" class="card-container">
+          if (obj.type === "University") {
+            htmlCardUniversity += `<div id="card-${obj.id}" class="card-container">
           <div class="card">
             <div class="img-container">
               <img class="card-img" src=${obj.img} alt="" />
@@ -509,8 +515,24 @@
           </div>
           <div class="card-shadow"></div>
         </div>`;
+          } else if (obj.type === "Frontend") {
+            hmtlCardFrontend += `<div id="card-${obj.id}" class="card-container">
+          <div class="card">
+            <div class="img-container">
+              <img class="card-img" src=${obj.img} alt="" />
+            </div>
+            <div class="text-md black marg card-title">${obj.title}</div>
+            <p class="text-s black marg grey desc text-justify">
+              ${obj.desc}
+            </p>
+            <div class="read-more text-md">Read More</div>
+          </div>
+          <div class="card-shadow"></div>
+        </div>`;
+          }
         });
-        card.innerHTML = htmlCard;
+        cardUniversity.innerHTML = htmlCardUniversity;
+        cardFrontend.innerHTML = hmtlCardFrontend;
       });
 
       //Modal Content + Mobile

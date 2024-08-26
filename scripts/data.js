@@ -104,6 +104,7 @@ const projects = {
       title: "Computer Vision",
       desc: "I have learned a lot about computer vision in the university and have made several projects in it. I mainly uses OpenCV2 to do computer vision projects",
       img: "assets/cv_1.png",
+      type: "University",
       detail: [
         {
           tools: [
@@ -191,6 +192,7 @@ const projects = {
       title: "Web Development",
       desc: "I'm also quiet proficient with web development. Some of the demonstration of my web development skill is in this portfolio website, which i made purely using HTML, CSS, and Javascript without any framework",
       img: "assets/wd-1.png",
+      type: "University",
       detail: [
         {
           tools: [
@@ -278,6 +280,7 @@ const projects = {
       title: "Laravel",
       desc: " I have learned Laravel basics in the university and enhances my skill by making project. Currently i have made 1 Laravel project with my friend.",
       img: "assets/laravel-thumbnail-2.jpg",
+      type: "University",
       detail: [
         {
           tools: [
@@ -364,6 +367,7 @@ const projects = {
       title: "UI/UX Design",
       desc: " I'm also proficient in using Figma to produce UI and UX. Through my internship, i have done steps to develop an efficient UI.",
       img: "assets/ui-1.png",
+      type: "University",
       detail: [
         {
           tools: [
@@ -435,6 +439,7 @@ const projects = {
       title: "Spark Data Analysis",
       desc: "I have also done many data analysis using Spark. The analysis is done using the combination of Python and SQL",
       img: "assets/sda-thumb.png",
+      type: "University",
       detail: [
         {
           tools: [
@@ -511,6 +516,7 @@ const projects = {
       title: "Data Warehouse",
       desc: "I have made a project in my university transforming data from ERD to Business Intelligence",
       img: "assets/etl-thumb.avif",
+      type: "University",
       detail: [
         {
           tools: [
@@ -559,6 +565,407 @@ const projects = {
               id: 1,
               text: "Spotify Data Warehouse",
               image: "assets/etl-01.png",
+            },
+          ],
+        },
+      ],
+    },
+    {
+      id: 8,
+      title: "Mortgage Calculator",
+      desc: "With this project, i'm proud to finally be able to learn React and how it works. I discovered that React hooks are one of the powerful feature to change and manage a web state. I also learned how to create React app using Vite, which is also a powerful build tool for frontend",
+      img: "assets/mortgage-thumb.png",
+      type: "Frontend",
+      detail: [
+        {
+          tools: [
+            {
+              id: 1,
+              image: "assets/React-logo.png",
+              bullet: "React.Js",
+            },
+            {
+              id: 2,
+              image: "assets/Tailwind-logo.png",
+              bullet: "Tailwind",
+            },
+            {
+              id: 3,
+              image: "assets/Vite-logo.png",
+              bullet: "Vite",
+            },
+          ],
+          concepts: [
+            {
+              id: 1,
+              con: "SPA",
+            },
+            {
+              id: 2,
+              con: "State Manipulation",
+            },
+            {
+              id: 3,
+              con: "Number Formatting",
+            },
+            {
+              id: 4,
+              con: "React Hooks",
+            },
+          ],
+          aboutProject1:
+            "With this project, i'm proud to finally be able to learn React and how it works. I discovered that React hooks are one of the powerful feature to change and manage a web state. I also learned how to create React app using Vite, which is also a powerful build tool for frontend",
+          aboutProject2:
+            "Since i'm still learning React, there are lots of things that took me a long time to figure out. For example, form validation using useState, and formatting the numbers. One of my most noticeable fault is by using useState. Since this is a simple form, i could have used useRef for a better performance, so that everytime the input is changed, the web is not constantly re-rendered.",
+          aboutProject3: "You can check my project through this Frontend Mentor link",
+          githubLink: "https://www.frontendmentor.io/solutions/responsive-mortgage-calculator-using-react-vite-tailwind-jrU_Z1FJjo",
+          projectGallery: [
+            {
+              id: 1,
+              text: "Mortgage Calculator",
+              image: "assets/mortgage-thumb.png",
+            },
+          ],
+        },
+      ],
+    },
+    {
+      id: 9,
+      title: "Advice Generator",
+      desc: "With this project, I'm proud to have understood the basic fundamentals of Next.Js. As a junior developer, i have learned how to retrieve data from API, and update the data with a click.",
+      img: "assets/advice-thumb.png",
+      type: "Frontend",
+      detail: [
+        {
+          tools: [
+            {
+              id: 1,
+              image: "assets/Next.js-logo.png",
+              bullet: "Next.Js",
+            },
+            {
+              id: 2,
+              image: "assets/Tailwind-logo.png",
+              bullet: "Tailwind",
+            },
+          ],
+          concepts: [
+            {
+              id: 1,
+              con: "API Fetching",
+            },
+            {
+              id: 2,
+              con: "SPA",
+            },
+            {
+              id: 3,
+              con: "React Hooks",
+            },
+          ],
+          aboutProject1:
+            "With this project, I'm proud to have understood the basic fundamentals of Next.Js. As a junior developer, i have learned how to retrieve data from API, and update the data with a click. I also learned to use Tailwind CSS using this project, which i think is better than Bootstrap because of the customizability. I have made the project to be as close as the design as possible to train my coding accuracy. This web app is also responsive.",
+          aboutProject2:
+            "At first, i encountered a problem where the data cannot be refreshed/randomized when i click the dice icon. But then, I've learned from documentations and forums like StackOverflow to find the solutions. This is the part where i learned how to use react hooks",
+          aboutProject3: "You can check my project through this Frontend Mentor link",
+          githubLink: "https://www.frontendmentor.io/solutions/advice-generator-app-using-nextjs-react-and-tailwind-aF0QuI6_Ay",
+          projectGallery: [
+            {
+              id: 1,
+              text: "Advice Generator",
+              image: "assets/advice-thumb.png",
+            },
+          ],
+        },
+      ],
+    },
+    {
+      id: 10,
+      title: "Room Homepage",
+      desc: "In this project, i'm proud to have successfully learned how to implement Gridboxes for the responsive layout.",
+      img: "assets/room-thumb.png",
+      type: "Frontend",
+      detail: [
+        {
+          tools: [
+            {
+              id: 1,
+              image: "assets/React-logo.png",
+              bullet: "React.Js",
+            },
+            {
+              id: 2,
+              image: "assets/Tailwind-logo.png",
+              bullet: "Tailwind",
+            },
+            {
+              id: 3,
+              image: "assets/Vite-logo.png",
+              bullet: "Vite",
+            },
+          ],
+          concepts: [
+            {
+              id: 1,
+              con: "Gridboxes",
+            },
+            {
+              id: 2,
+              con: "State Management",
+            },
+            {
+              id: 3,
+              con: "Responsive Design",
+            },
+            {
+              id: 4,
+              con: "Material Tailwind",
+            },
+          ],
+          aboutProject1:
+            "In this project, i'm proud to have successfully learned how to implement Gridboxes for the responsive layout. This project also teaches me how to control DOM using keyboard. I also learned how to use Material-Tailwind to implement carousel and buttons.",
+          aboutProject2:
+            "As far as i know, the right way to manipulate DOM in React is to use useRef. But i'm still learning to use the hook and implementing it in this project seems quite difficult. So I decided to use Vanilla JS DOM manipulation for a while, and try to use it in different project.",
+          aboutProject3: "You can check my project through this Frontend Mentor link",
+          githubLink: "https://www.frontendmentor.io/solutions/room-homepage-using-react-tailwind-and-material-tailwind-gtu0bq7JXI",
+          projectGallery: [
+            {
+              id: 1,
+              text: "Room Homepage",
+              image: "assets/room-thumb.png",
+            },
+          ],
+        },
+      ],
+    },
+    {
+      id: 11,
+      title: "Newsletter Signup Form",
+      desc: "I'm proud to have completed this project using my current skills in React and Tailwind. I've finally put a good use of useRef in this project for email validation and have understood the core concept of it.",
+      img: "assets/newsletter-signup-thumb.png",
+      type: "Frontend",
+      detail: [
+        {
+          tools: [
+            {
+              id: 1,
+              image: "assets/React-logo.png",
+              bullet: "React.Js",
+            },
+            {
+              id: 2,
+              image: "assets/Tailwind-logo.png",
+              bullet: "Tailwind",
+            },
+            {
+              id: 3,
+              image: "assets/Vite-logo.png",
+              bullet: "Vite",
+            },
+          ],
+          concepts: [
+            {
+              id: 1,
+              con: "Gridboxes",
+            },
+            {
+              id: 2,
+              con: "State Management",
+            },
+            {
+              id: 3,
+              con: "Responsive Design",
+            },
+            {
+              id: 4,
+              con: "Uncontrolled Component",
+            },
+          ],
+          aboutProject1:
+            "I'm proud to have completed this project using my current skills in React and Tailwind. I've finally put a good use of useRef in this project for email validation and have understood the core concept of it. The project is made to be as similar as possible with the design and responsive with any devices",
+          aboutProject2:
+            "Since this is the second times i tried using gridboxes, i still haven't able to figure out how to adjust the items inside grid areas, since grids cannot use align-items and justify-content. So currently i'm researching to find a solution to it. The problem can be seen in the Thanks For Subscribing page in mobile version",
+          aboutProject3: "You can check my project through this Frontend Mentor link",
+          githubLink: "https://www.frontendmentor.io/solutions/responsive-newsletter-signup-form-using-react-and-tailwind-lSdNgfB4f1",
+          projectGallery: [
+            {
+              id: 1,
+              text: "Newsletter Signup Form",
+              image: "assets/newsletter-signup-thumb.png",
+            },
+          ],
+        },
+      ],
+    },
+    {
+      id: 12,
+      title: "News Homepage",
+      desc: "With the accomplishment of this project, I have now an intermediate understanding of how grid works. This project is indeed challenges you to make a responsive grid.",
+      img: "assets/news-thumb.png",
+      type: "Frontend",
+      detail: [
+        {
+          tools: [
+            {
+              id: 1,
+              image: "assets/React-logo.png",
+              bullet: "React.Js",
+            },
+            {
+              id: 2,
+              image: "assets/Tailwind-logo.png",
+              bullet: "Tailwind",
+            },
+            {
+              id: 3,
+              image: "assets/Vite-logo.png",
+              bullet: "Vite",
+            },
+          ],
+          concepts: [
+            {
+              id: 1,
+              con: "Gridboxes",
+            },
+            {
+              id: 2,
+              con: "Responsive Design",
+            },
+            {
+              id: 3,
+              con: "Code-to-Design Accuracy",
+            },
+          ],
+          aboutProject1:
+            "With the accomplishment of this project, I have now an intermediate understanding of how grid works. This project is indeed challenges you to make a responsive grid. In this project, this is the first time i didn't used any display flex to adjust elements position",
+          aboutProject2:
+            "At first, i have no clue how CSS grid works. But with this project, i have watched some youtube tutorials and blog posts explaining about grids. Now, i have intermediate understanding of how to use it and how to make it responsive.",
+          aboutProject3: "You can check my project through this Frontend Mentor link",
+          githubLink: "https://www.frontendmentor.io/solutions/responsive-news-homepage-with-react-and-tailwind-vKWmsDiKCp",
+          projectGallery: [
+            {
+              id: 1,
+              text: "News Homepage",
+              image: "assets/news-thumb.png",
+            },
+          ],
+        },
+      ],
+    },
+    {
+      id: 13,
+      title: "Where in the world?",
+      desc: "I'm proud to have finished this project to deepen my knowledge in API calls, using React hooks, especially useContext, and routing using React-router. I've also learned how to filter and implement search bar in this project",
+      img: "assets/world-thumb.png",
+      type: "Frontend",
+      detail: [
+        {
+          tools: [
+            {
+              id: 1,
+              image: "assets/React-logo.png",
+              bullet: "React.Js",
+            },
+            {
+              id: 2,
+              image: "assets/Tailwind-logo.png",
+              bullet: "Tailwind",
+            },
+            {
+              id: 3,
+              image: "assets/Vite-logo.png",
+              bullet: "Vite",
+            },
+            {
+              id: 4,
+              image: "assets/react-router-logo.png",
+              bullet: "React Router",
+            },
+          ],
+          concepts: [
+            {
+              id: 1,
+              con: "Routing",
+            },
+            {
+              id: 2,
+              con: "Search filter",
+            },
+            {
+              id: 3,
+              con: "Context Provider",
+            },
+          ],
+          aboutProject1:
+            "I've made this project to be slightly differ from the given design. One of the noticable changes is that in the original design, the flags are supposed to be shown fully in the card from edge to edge. But in my web, there are a wrapper for the country flags. This is done to respect each flag's aspect ratio, and to make it differ from another country's flag if there are countries with similar flags like Indonesia and Monaco.",
+          aboutProject2:
+            "But most importantly, i'm proud to have finished this project to deepen my knowledge in API calls, using React hooks, especially useContext, and routing using React-router. I've also learned how to filter and implement search bar in this project",
+          aboutProject3: "You can check my project through this Frontend Mentor link",
+          githubLink: "https://www.frontendmentor.io/solutions/rest-countries-api-using-vite-react-tailwind-tCSJQW2yS9",
+          projectGallery: [
+            {
+              id: 1,
+              text: "Where in the world?",
+              image: "assets/world-thumb.png",
+            },
+          ],
+        },
+      ],
+    },
+    {
+      id: 14,
+      title: "Todo App",
+      desc: "With this project, i've successfully implemented a frontend CRUD operations with LocalStorage. This project taught me how to create, read, update, and delete items in LocalStorage.",
+      img: "assets/todo-thumb.png",
+      type: "Frontend",
+      detail: [
+        {
+          tools: [
+            {
+              id: 1,
+              image: "assets/React-logo.png",
+              bullet: "React.Js",
+            },
+            {
+              id: 2,
+              image: "assets/Tailwind-logo.png",
+              bullet: "Tailwind",
+            },
+            {
+              id: 3,
+              image: "assets/Vite-logo.png",
+              bullet: "Vite",
+            },
+          ],
+          concepts: [
+            {
+              id: 1,
+              con: "CRUD in LocalStorage",
+            },
+            {
+              id: 2,
+              con: "React Component",
+            },
+            {
+              id: 3,
+              con: "State Management",
+            },
+            {
+              id: 4,
+              con: "Filtering",
+            },
+          ],
+          aboutProject1:
+            "With this project, i've successfully implemented a frontend CRUD operations with LocalStorage. This project taught me how to create, read, update, and delete items in LocalStorage. It is quite challenging at first, but i've overcome it",
+          aboutProject2:
+            "Making the LocalStorage to sync with the web state is quite challenging at first, but i've finally solved it in the end. One of the most challenging thing in this project is implementing drag and drop feature. First, i want to use external library called Swapy. But it somehow didn't work with dynamic list like this todo app. I might've need to understand it more properly and will try to implement it",
+          aboutProject3: "You can check my project through this Frontend Mentor link",
+          githubLink: "https://www.frontendmentor.io/solutions/todo-app-using-react-tailwind-and-vite-753f14mIMD",
+          projectGallery: [
+            {
+              id: 1,
+              text: "Todo App",
+              image: "assets/todo-thumb.png",
             },
           ],
         },

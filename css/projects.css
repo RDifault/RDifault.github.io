@@ -6,7 +6,12 @@
     margin-right: 45vmin; */
 }
 
-#card {
+#card-university {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#card-frontend {
   flex-wrap: wrap;
   justify-content: center;
 }
