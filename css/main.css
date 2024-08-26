@@ -235,6 +235,12 @@ padding-bottom: 22vh; */
 }
 
 .title {
+  &.subtitle {
+    font-size: 64px;
+  }
+}
+
+.title {
   &.left {
     &.front {
       color: black;
@@ -303,8 +309,20 @@ padding-bottom: 22vh; */
   /* background-color: aqua; */
 }
 
+.hidden {
+  display: none;
+}
+
 .d-flex {
   display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
 }
 
 .align-items-center {

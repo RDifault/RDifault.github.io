@@ -5,6 +5,7 @@ const projects = {
       title: "Machine/Deep Learning",
       desc: "I have done many projects involving machine learning and deep learning. I have learned many concepts like SVM, RF, to neural network concepts and its models like RNN, CNN, etc.",
       img: "assets/ml0-1.png",
+      type: "University",
       detail: [
         {
           tools: [
